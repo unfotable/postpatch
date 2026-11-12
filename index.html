@@ -4,8 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#FAFAFA">
-<title>Postpatch</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2048%2048%22%3E%3Crect%20width%3D%2248%22%20height%3D%2248%22%20rx%3D%2210%22%20fill%3D%22%23000%22/%3E%3Cg%20transform%3D%22translate%28-.5%20-.5%29%22%3E%3Crect%20x%3D%2218%22%20y%3D%2218%22%20width%3D%2220%22%20height%3D%2220%22%20rx%3D%224.5%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22/%3E%3Cmask%20id%3D%22lg-m%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2248%22%20height%3D%2248%22%3E%3Crect%20width%3D%2248%22%20height%3D%2248%22%20fill%3D%22%23fff%22/%3E%3Cg%20fill%3D%22%23000%22%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2230%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2210%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2230%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2210%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2230%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2225%22%20cy%3D%2210%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2225%22%20cy%3D%2230%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2210%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2215%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2220%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2210%22%20cy%3D%2225%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2215%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2220%22%20r%3D%221.1%22/%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2225%22%20r%3D%221.1%22/%3E%3C/g%3E%3C/mask%3E%3Crect%20x%3D%2210%22%20y%3D%2210%22%20width%3D%2220%22%20height%3D%2220%22%20rx%3D%224.5%22%20fill%3D%22%23fff%22%20stroke%3D%22%23000%22%20stroke-width%3D%223%22%20paint-order%3D%22stroke%22%20mask%3D%22url%28%23lg-m%29%22/%3E%3C/g%3E%3Cpath%20d%3D%22M37%206.5Q37.9%2010.1%2041.5%2011Q37.9%2011.9%2037%2015.5Q36.1%2011.9%2032.5%2011Q36.1%2010.1%2037%206.5Z%22%20fill%3D%22%23fff%22/%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2238.5%22%20r%3D%221.6%22%20fill%3D%22%23fff%22/%3E%3C/svg%3E">
+<title>SKYE</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
@@ -118,60 +117,31 @@ h1,h2,h3{font-family:var(--font-serif);font-weight:500;letter-spacing:-.02em;lin
 .auth-card h1{margin-bottom:var(--sp-2)}
 .switch-line{margin-top:var(--sp-5);text-align:center}
 .switch-line a{color:var(--blue);font-weight:600}
-/* ===================== CAMERA ===================== */
-.cam{position:relative;background:var(--carbon);border-radius:var(--r-card) var(--r-card) 0 0;overflow:hidden;aspect-ratio:4/5;max-height:70dvh;margin:0 auto;width:100%;max-width:520px}
-.cam video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.cam video.mirror{transform:scaleX(-1)}
-.cam__pre{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:var(--sp-4);padding:var(--sp-6);color:var(--cream-text)}
-.cam__pre h2{color:var(--cream);font-size:var(--fs-title)}
-.cam__bar{display:flex;align-items:center;justify-content:space-between;max-width:520px;margin:var(--sp-5) auto 0;padding:0 var(--sp-4)}
-.shutter{position:relative;width:84px;height:84px;border-radius:50%;border:5px solid var(--cream);background:transparent;cursor:pointer;display:grid;place-items:center;padding:0}
-.shutter::after{content:"";width:58px;height:58px;border-radius:50%;background:var(--carbon);transition:transform var(--dur-ui) var(--ease)}
-.shutter:active::after{transform:scale(.92)}
-.shutter-ring{position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--blue);opacity:0;pointer-events:none}
-.round-btn{width:56px;height:56px;border-radius:50%;border:1px solid var(--gray);background:transparent;color:var(--carbon);display:grid;place-items:center;cursor:pointer;transition:border-color var(--dur-ui) var(--ease),transform var(--dur-ui)}
-.round-btn:hover{border-color:var(--carbon)} .round-btn:active{transform:scale(.96)}
-.cam-hint{text-align:center;margin-top:var(--sp-4)}
-.spacer56{width:56px;height:56px}
-/* ===================== STAMP ===================== */
-.stamp-stage{display:grid;place-items:center;padding:var(--sp-5) 0}
-.stamp-img{display:block;width:min(100%,340px);height:auto}
-.stamp-canvas{display:block;width:min(100%,340px);height:auto}
-.postmark{font:500 1.0625rem var(--font-serif);letter-spacing:.06em;color:var(--carbon);text-align:center;margin-top:var(--sp-3)}
-.note-line{font:italic 400 1rem var(--font-serif);color:var(--gray-text);text-align:center;min-height:1.5em}
-.preview-grid{display:grid;gap:var(--sp-6);max-width:880px;margin:0 auto}
-@media (min-width:760px){.preview-grid{grid-template-columns:1fr 1fr;align-items:center}}
-.reveal{animation:settle var(--dur-hero) var(--ease) both}
-@keyframes settle{from{opacity:0;transform:scale(.94) translateY(12px)}to{opacity:1;transform:none}}
-/* ===================== ALBUM ===================== */
-.album-head{display:flex;align-items:end;justify-content:space-between;gap:var(--sp-4);margin-bottom:var(--sp-6)}
-.album{display:grid;gap:var(--sp-5);grid-template-columns:repeat(auto-fill,minmax(150px,1fr));padding:var(--sp-5);background:#fff;border:1px solid var(--gray);border-radius:var(--r-card)}
-.tile{background:none;border:0;padding:0;cursor:pointer;text-align:center;border-radius:var(--r-input);transition:transform var(--dur-ui) var(--ease)}
-.tile:hover{transform:translateY(-3px)} .tile:active{transform:scale(.98)}
-.tile img{display:block;width:100%;height:auto;aspect-ratio:989/1200}
-.tile span{display:block;font:500 .75rem var(--font-serif);letter-spacing:.06em;color:var(--gray-text);margin-top:var(--sp-2)}
-.tile.fade{animation:rise var(--dur-ui) var(--ease) both}
-.tile.drop{animation:drop var(--dur-hero) var(--ease) both}
-@keyframes drop{from{opacity:0;transform:translateY(-48px) scale(1.06)}to{opacity:1;transform:none}}
-.empty{border:1px solid var(--gray);border-radius:var(--r-card);padding:var(--sp-8) var(--sp-6);background:#fff;display:flex;flex-direction:column;gap:var(--sp-4);align-items:flex-start}
-.skel{aspect-ratio:989/1200;background:linear-gradient(90deg,#efedee,#f7f6f6,#efedee);background-size:200% 100%;border-radius:var(--r-input);animation:sh 1.4s linear infinite}
-@keyframes sh{to{background-position:-200% 0}}
-dialog{border:0;border-radius:var(--r-card);padding:0;max-width:min(94vw,520px);width:100%;background:var(--canvas);color:var(--carbon)}
-dialog::backdrop{background:rgba(26,27,30,.72)}
-dialog[open]{animation:rise var(--dur-ui) var(--ease)}
-.viewer{padding:var(--sp-6);display:flex;flex-direction:column;gap:var(--sp-4)}
-.viewer__top{display:flex;justify-content:flex-end}
-.toggle-row{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4);min-height:var(--touch)}
-.switch{position:relative;width:52px;height:32px;border-radius:var(--r-pill);border:1px solid var(--gray);background:#fff;cursor:pointer;padding:0;transition:background var(--dur-ui) var(--ease)}
-.switch::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:var(--carbon);transition:transform var(--dur-ui) var(--ease),background var(--dur-ui)}
-.switch[aria-checked="true"]{background:var(--blue);border-color:var(--blue)}
-.switch[aria-checked="true"]::after{transform:translateX(20px);background:var(--cream)}
-.share-link{display:flex;gap:var(--sp-2)}
-.share-link input{flex:1;min-width:0;font-size:.8125rem}
-.confirm{padding:var(--sp-6);display:flex;flex-direction:column;gap:var(--sp-4)}
-/* ===================== PUBLIC ===================== */
-.public{min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--sp-4);padding:var(--sp-6);text-align:center}
-.public a{color:var(--carbon);font-weight:500}
+/* ===================== CHAT ===================== */
+.chat{display:grid;grid-template-columns:300px 1fr;gap:var(--sp-4);height:calc(100dvh - 120px);min-height:420px}
+.side,.main{padding:var(--sp-4);display:flex;flex-direction:column;gap:var(--sp-3);min-height:0}
+.main{padding:0;overflow:hidden}
+.flist{display:flex;flex-direction:column;gap:var(--sp-2);overflow:auto;flex:1}
+.fr{display:flex;align-items:center;gap:var(--sp-3);padding:var(--sp-3);border:1px solid var(--gray);border-radius:var(--r-btn);background:#fff;cursor:pointer;transition:border-color var(--dur-ui) var(--ease)}
+.fr:hover,.fr.on{border-color:var(--blue)}
+.fr>div{flex:1;min-width:0}
+.av{width:40px;height:40px;border-radius:50%;background:var(--carbon);color:var(--cream-text);display:grid;place-items:center;font:600 1rem var(--font-sans);flex:none}
+.th-empty{margin:auto;padding:var(--sp-6);display:flex;flex-direction:column;gap:var(--sp-2);align-items:center;text-align:center}
+.thread{display:flex;flex-direction:column;height:100%;min-height:0}
+.th-head{display:flex;align-items:center;gap:var(--sp-3);padding:var(--sp-3) var(--sp-4);border-bottom:1px solid var(--gray)}
+.msgs{flex:1;overflow:auto;padding:var(--sp-4);display:flex;flex-direction:column;gap:var(--sp-2)}
+.b{max-width:min(80%,520px);padding:10px 14px;border-radius:var(--r-btn);word-break:break-word;white-space:pre-wrap;display:flex;flex-direction:column;gap:var(--sp-2);align-items:flex-start}
+.b.me{align-self:flex-end;background:var(--carbon);color:var(--cream-text);border:1px solid var(--blue)}
+.b.th{align-self:flex-start;background:#fff;border:1px solid var(--gray)}
+.b img,.b video{max-width:100%;border-radius:var(--r-input)}
+.b audio{max-width:100%}
+.b .chip{min-height:36px;color:inherit;font-size:.8125rem}
+.xfer{padding:0 var(--sp-4) var(--sp-2)}
+.compose{display:flex;gap:var(--sp-2);align-items:flex-end;padding:var(--sp-3);border-top:1px solid var(--gray)}
+.compose .btn{width:auto;min-height:56px}
+textarea.input{padding:16px;min-height:56px;max-height:140px;resize:none;line-height:1.3}
+@media (min-width:761px){.back{display:none}}
+@media (max-width:760px){.chat{grid-template-columns:1fr}.chat.in-thread .side{display:none}.chat:not(.in-thread) .main{display:none}}
 /* ===================== REDUCED MOTION ===================== */
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
@@ -180,31 +150,11 @@ dialog[open]{animation:rise var(--dur-ui) var(--ease)}
 .id-row .input{flex:1;min-width:0;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
 .id-row .round-btn{flex:none;border-radius:var(--r-input)}
 #who{margin-right:var(--sp-2)}
-.hero__mail{position:absolute;z-index:2;left:var(--sp-5);right:var(--sp-5);bottom:var(--sp-5);display:flex;flex-direction:column;gap:var(--sp-2)}
-.hero__mail .caption{color:var(--cream-text);opacity:.75}.hero__mail .error{color:#ff9a8d}
-.card--dark .caption{color:#a9a6ab}.card--dark .btn--secondary{color:var(--cream-text);border-color:#4a4b50}.card--dark h2{color:var(--cream)}
-.dash{display:grid;gap:var(--sp-5)}
-.stats{display:grid;gap:var(--sp-4);grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
-.stat{padding:var(--sp-5);border-radius:32px}
-.stat b{display:block;font:500 clamp(2rem,1.6rem + 2vw,3rem)/1 var(--font-serif);margin-top:var(--sp-3);color:var(--carbon)}
-.stat.card--dark b{color:var(--cream)}
-.dash-grid{display:grid;gap:var(--sp-5)}@media(min-width:860px){.dash-grid{grid-template-columns:1.7fr 1fr;align-items:start}}
-.bars{display:flex;align-items:flex-end;gap:6px;height:120px;margin:var(--sp-4) 0 var(--sp-2);padding:var(--sp-3);border-radius:var(--r-input);background-image:radial-gradient(var(--gray) 1.2px,transparent 1.3px);background-size:16px 16px}
-.bars i{flex:1;background:var(--blue);border-radius:6px 6px 2px 2px}
-.lead{display:flex;align-items:center;gap:var(--sp-4);padding:var(--sp-3) 0;border-top:1px solid var(--gray)}
-.lead span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.avatar{flex:none;width:40px;height:40px;border-radius:50%;background:var(--carbon);color:var(--cream);display:grid;place-items:center;font:500 1rem var(--font-serif)}
-.live{display:inline-flex;align-items:center;gap:8px}.live::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gray)}
-.live.on::before{background:#2ecc71;box-shadow:0 0 0 4px rgba(46,204,113,.2)}
-.row-btns{display:flex;gap:var(--sp-2);flex-wrap:wrap}
-.wordmark{display:inline-flex;align-items:center;gap:10px}
-.logo{width:32px;height:32px;flex:none}.logo--lg{width:56px;height:56px}
 </style>
 <script src="https://unpkg.com/mqtt@5/dist/mqtt.min.js"></script>
 </head>
 <body>
 <svg class="sprite" aria-hidden="true" focusable="false">
-  <symbol id="i-logo" viewBox="0 0 48 48"><rect width="48" height="48" rx="10" fill="#000"/><g transform="translate(-.5 -.5)"><rect x="18" y="18" width="20" height="20" rx="4.5" fill="none" stroke="#fff" stroke-width="2"/><mask id="lg-m" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48"><rect width="48" height="48" fill="#fff"/><g fill="#000"><circle cx="10" cy="10" r="1.1"/><circle cx="10" cy="30" r="1.1"/><circle cx="15" cy="10" r="1.1"/><circle cx="15" cy="30" r="1.1"/><circle cx="20" cy="10" r="1.1"/><circle cx="20" cy="30" r="1.1"/><circle cx="25" cy="10" r="1.1"/><circle cx="25" cy="30" r="1.1"/><circle cx="30" cy="10" r="1.1"/><circle cx="30" cy="30" r="1.1"/><circle cx="10" cy="15" r="1.1"/><circle cx="10" cy="20" r="1.1"/><circle cx="10" cy="25" r="1.1"/><circle cx="30" cy="15" r="1.1"/><circle cx="30" cy="20" r="1.1"/><circle cx="30" cy="25" r="1.1"/></g></mask><rect x="10" y="10" width="20" height="20" rx="4.5" fill="#fff" stroke="#000" stroke-width="3" paint-order="stroke" mask="url(#lg-m)"/></g><path d="M37 6.5Q37.9 10.1 41.5 11Q37.9 11.9 37 15.5Q36.1 11.9 32.5 11Q36.1 10.1 37 6.5Z" fill="#fff"/><circle cx="11" cy="38.5" r="1.6" fill="#fff"/></symbol>
   <symbol id="i-flip" viewBox="0 0 24 24"><path d="M4 9a8 8 0 0 1 14-3l2 2M20 15a8 8 0 0 1-14 3l-2-2M20 4v4h-4M4 20v-4h4"/></symbol>
   <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
   <symbol id="i-album" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></symbol>
@@ -217,16 +167,15 @@ dialog[open]{animation:rise var(--dur-ui) var(--ease)}
   <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V5M7 9l5-5 5 5M5 20h14"/></symbol>
   <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
   <symbol id="i-dice" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></symbol>
 </svg>
 
 <!-- ============ TOP BAR (app screens) ============ -->
 <header class="topbar" id="topbar" hidden>
-  <a class="wordmark" href="#/camera"><svg class="logo" aria-hidden="true"><use href="#i-logo"/></svg><span>Postpatch</span></a>
+  <a class="wordmark" href="#/chat">SKYE</a>
   <nav class="topnav" aria-label="Main">
     <span class="caption" id="who"></span>
-    <a class="chip" id="nav-camera" href="#/camera"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg><span>Camera</span></a>
-    <a class="chip" id="nav-album" href="#/album"><svg class="icon" aria-hidden="true"><use href="#i-album"/></svg><span>Album</span></a>
-    <a class="chip" id="nav-owner" href="#/owner" hidden><span>Owner</span></a>
     <button class="chip chip--quiet" id="logout" type="button">Log out</button>
   </nav>
 </header>
@@ -242,37 +191,36 @@ dialog[open]{animation:rise var(--dur-ui) var(--ease)}
 
     <div class="slide active" data-step="1">
       <div class="hero">
-        <div class="hero__copy"><h1>Keep it small. Keep it real.</h1><p>Turn any moment into a postage stamp.</p></div>
+        <div class="hero__copy"><h1>Meet people. Keep it real.</h1><p>Make a unique ID and chat with friends.</p></div>
         <svg class="swirl" viewBox="0 0 945 1415" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path pathLength="1" d="M -80 1180 C 20 1000 190 905 340 920 C 470 935 540 1010 520 1090 C 505 1230 350 1250 340 1140 C 335 1040 470 1020 560 1080 C 620 1120 670 1170 690 1215 C 740 1260 830 1300 790 1360 C 760 1405 650 1390 650 1300 C 655 1230 760 1180 860 1225 C 940 1255 990 1270 1040 1240"/></svg>
       </div>
     </div>
     <div class="slide" data-step="2">
       <div class="hero">
-        <div class="hero__copy"><h1>Say hello to your camera.</h1><p>We only ask when you're ready to snap. Nothing is shared.</p></div>
+        <div class="hero__copy"><h1>Pick your unique ID.</h1><p>One ID that's only yours. Share it and friends can find you.</p></div>
         <svg class="swirl" viewBox="0 0 945 1415" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path pathLength="1" d="M -80 1260 C 80 1270 220 1230 330 1160 C 440 1090 560 1010 520 920 C 480 830 340 870 360 990 C 380 1100 560 1190 700 1130 C 800 1085 840 990 900 950 C 950 915 1000 915 1040 925"/></svg>
       </div>
     </div>
     <div class="slide" data-step="3">
       <div class="hero">
-        <div class="hero__copy"><h1>A photo, a border, a stamp.</h1><p>No filters. No effects. Just your photo, perforated.</p></div>
+        <div class="hero__copy"><h1>Chat without limits.</h1><p>No cap on messages. Send over 1 crore letters at once.</p></div>
         <svg class="swirl" viewBox="0 0 945 1415" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path pathLength="1" d="M -80 1190 C -20 1190 20 1040 120 1040 C 220 1040 230 1260 340 1260 C 450 1260 450 1040 550 1040 C 650 1040 660 1260 760 1260 C 850 1260 870 1100 960 1090 C 990 1087 1015 1100 1040 1120"/></svg>
       </div>
     </div>
     <div class="slide" data-step="4">
       <div class="hero">
-        <div class="hero__copy"><h1>Private until you say so.</h1><p>Every stamp is yours. Share one with a link, revoke it anytime.</p></div>
+        <div class="hero__copy"><h1>Send anything, up to 4 GB.</h1><p>Images, audio, video and any file, straight to your friend.</p></div>
         <svg class="swirl" viewBox="0 0 945 1415" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path pathLength="1" d="M -80 1010 C 60 990 150 1050 190 1150 C 230 1250 340 1320 430 1250 C 530 1170 470 1030 380 1090 C 290 1150 370 1330 520 1300 C 680 1270 720 1080 800 980 C 860 905 960 905 1040 965"/></svg>
       </div>
     </div>
     <div class="slide" data-step="5">
       <div class="hero">
-        <div class="hero__copy"><h1>Start your album.</h1><p>Make an account and your first stamp is one tap away.</p></div>
-        <div class="hero__mail"><label class="caption" for="ob-mail">Your email (optional)</label><input class="input" id="ob-mail" type="email" inputmode="email" autocomplete="email" maxlength="120" placeholder="you@example.com"><p class="error" id="ob-mail-err" role="alert"></p><p class="caption">Sent encrypted to the Postpatch owner so they can reach you.</p></div>
+        <div class="hero__copy"><h1>Join SKYE.</h1><p>Make your ID and add your first friend.</p></div>
         <svg class="swirl" viewBox="0 0 945 1415" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path pathLength="1" d="M -80 1310 C 100 1310 250 1280 340 1190 C 430 1100 400 960 310 980 C 220 1000 240 1150 360 1130 C 480 1110 540 960 660 910 C 780 860 880 930 840 1010 C 805 1075 720 1030 755 970 C 790 910 930 940 1040 1010"/></svg>
       </div>
     </div>
 
-    <p class="onb__links caption" id="onb-login" hidden>Already have an album? <a href="#/login"><strong>Log in</strong></a></p>
+    <p class="onb__links caption" id="onb-login" hidden>Already have an ID? <a href="#/login"><strong>Log in</strong></a></p>
     <div class="onb__foot"><button class="btn btn--primary" id="onb-next" type="button">Next</button></div>
   </div>
 </section>
@@ -281,10 +229,10 @@ dialog[open]{animation:rise var(--dur-ui) var(--ease)}
 <section class="view" id="v-auth" aria-label="Account">
   <div class="page">
     <div class="narrow">
-      <a class="wordmark" href="#/"><svg class="logo" aria-hidden="true"><use href="#i-logo"/></svg><span>Postpatch</span></a>
+      <a class="wordmark" href="#/">SKYE</a>
       <div class="card auth-card rise">
-        <h1 class="title" id="auth-title">Start your album.</h1>
-        <p class="body-quiet" id="auth-sub">Your stamps stay on this device, tidy and private.</p>
+        <h1 class="title" id="auth-title">Join SKYE.</h1>
+        <p class="body-quiet" id="auth-sub">Pick an ID and a password. Then add friends and chat.</p>
         <form id="auth-form" novalidate class="stack" style="margin-top:24px">
           <div class="field" id="f-name">
             <label for="name">Your name</label>
@@ -322,136 +270,34 @@ dialog[open]{animation:rise var(--dur-ui) var(--ease)}
   </div>
 </section>
 
-<!-- ============ 3. CAMERA ============ -->
-<section class="view" id="v-camera" aria-label="Camera">
-  <div class="page">
-    <div class="cam rise" id="cam">
-      <video id="video" playsinline muted autoplay aria-label="Live camera preview" hidden></video>
-      <div class="cam__pre" id="cam-pre">
-        <h2>Let's take a stamp.</h2>
-        <p class="body-quiet" style="color:var(--cream-text);opacity:.75">Postpatch uses your camera only to take the photo you choose. Nothing is uploaded anywhere.</p>
-        <button class="btn btn--primary" id="cam-allow" type="button">Open camera</button>
-        <button class="btn btn--secondary" id="cam-upload-alt" type="button" style="color:var(--cream-text);border-color:#4a4b50">Choose a photo instead</button>
-        <p class="error" id="cam-err" role="alert" style="color:#ff9a8d"></p>
-      </div>
-    </div>
-    <div class="cam__bar" id="cam-bar" hidden>
-      <button class="round-btn" id="cam-pick" type="button" aria-label="Choose a photo from your device"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg></button>
-      <button class="shutter" id="shutter" type="button" aria-label="Take photo"><span class="shutter-ring" id="ring"></span></button>
-      <button class="round-btn" id="flip" type="button" aria-label="Flip camera"><svg class="icon" aria-hidden="true"><use href="#i-flip"/></svg></button>
-    </div>
-    <p class="caption cam-hint" id="cam-hint" hidden>Frame it. Tap once. That's the whole trick.</p>
-    <input class="sr" id="file" type="file" accept="image/jpeg,image/png,image/webp" tabindex="-1">
-  </div>
-</section>
-
-<!-- ============ 4. PREVIEW ============ -->
-<section class="view" id="v-preview" aria-label="Stamp preview">
-  <div class="page">
-    <div class="preview-grid">
-      <div>
-        <div class="stamp-stage"><canvas class="stamp-canvas" id="pv-canvas" width="989" height="1200" role="img" aria-label="Your new stamp"></canvas></div>
-        <p class="postmark" id="pv-postmark"></p>
-        <p class="note-line" id="pv-note"></p>
-      </div>
-      <div class="stack">
-        <h1 class="title">Looking good.</h1>
-        <p class="body-quiet">Add a line if you like. The date is filled in for you.</p>
-        <div class="field">
-          <label for="note">A few words (optional)</label>
-          <input class="input" id="note" maxlength="40" placeholder="Sunday, slow coffee" autocomplete="off">
+<!-- ============ 3. CHAT ============ -->
+<section class="view" id="v-chat" aria-label="Chats">
+  <div class="page" style="padding-bottom:var(--sp-5)">
+    <div class="chat" id="chat">
+      <aside class="side card">
+        <h2 class="title">Friends</h2>
+        <form id="add-form" class="id-row"><input class="input" id="addid" maxlength="14" placeholder="FRIEND-ID" autocapitalize="characters" spellcheck="false" autocomplete="off" aria-label="Friend ID"><button class="round-btn" type="submit" aria-label="Add friend"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></form>
+        <div class="flist" id="fl"></div>
+        <p class="caption" id="fl-empty">No friends yet. Type a friend's ID above to send a request.</p>
+      </aside>
+      <section class="main card">
+        <div class="th-empty" id="th-empty"><h2 class="title">Say hi.</h2><p class="body-quiet">Pick a friend to start chatting.</p></div>
+        <div class="thread" id="thread" hidden>
+          <div class="th-head"><button class="round-btn back" id="th-back" type="button" aria-label="Back"><svg class="icon" aria-hidden="true"><use href="#i-back"/></svg></button><div><strong id="th-name"></strong><div class="caption" id="th-st"></div></div></div>
+          <div class="msgs" id="msgs"></div>
+          <div class="caption xfer" id="xfer" hidden></div>
+          <form class="compose" id="compose">
+            <input class="sr" id="att" type="file" multiple tabindex="-1">
+            <button class="round-btn" id="att-btn" type="button" aria-label="Attach files, up to 4 GB each"><svg class="icon" aria-hidden="true"><use href="#i-clip"/></svg></button>
+            <textarea class="input" id="tx" rows="1" placeholder="Message" aria-label="Message"></textarea>
+            <button class="btn btn--primary" type="submit">Send</button>
+          </form>
         </div>
-        <div class="toggle-row"><div><strong style="font-weight:600">Invisible seal</strong><p class="caption">Hides an ID in the pixels so you can prove a stamp is yours and spot edits. It does not stop deepfakes.</p></div><button class="switch" id="seal-toggle" type="button" role="switch" aria-checked="true" aria-label="Invisible seal"></button></div>
-        <button class="btn btn--primary" id="save-stamp" type="button">Save stamp</button>
-        <button class="btn btn--secondary" id="retake" type="button">Retake</button>
-        <p class="error" id="save-err" role="alert"></p>
-      </div>
+      </section>
     </div>
   </div>
 </section>
 
-<!-- ============ 5. ALBUM ============ -->
-<section class="view" id="v-album" aria-label="Album">
-  <div class="page">
-    <div class="album-head">
-      <div><p class="caption" id="album-count"></p><h1 class="display">Your album</h1></div>
-      <div class="row-btns"><button class="chip" id="verify-btn" type="button"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg><span>Verify image</span></button><a class="chip" href="#/camera"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg><span>New stamp</span></a></div>
-      <input class="sr" id="vfile" type="file" accept="image/*" tabindex="-1">
-    </div>
-    <div class="album" id="album-loading" aria-busy="true" aria-label="Loading your stamps"><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
-    <div class="empty rise" id="album-empty" hidden>
-      <h2 class="title">Nothing here yet.</h2>
-      <p class="body-quiet">Your first stamp is one tap away.</p>
-      <a class="btn btn--primary" href="#/camera" style="max-width:320px">Make a stamp</a>
-    </div>
-    <div class="empty rise" id="album-error" hidden>
-      <h2 class="title">Couldn't open your album.</h2>
-      <p class="body-quiet">Something went sideways. Give it another go.</p>
-      <button class="btn btn--secondary" id="album-retry" type="button" style="max-width:320px">Try again</button>
-    </div>
-    <div class="album" id="album" hidden></div>
-  </div>
-</section>
-
-<!-- ============ OWNER DASHBOARD ============ -->
-<section class="view" id="v-owner" aria-label="Owner dashboard">
-  <div class="page dash">
-    <div class="album-head">
-      <div><p class="caption live" id="o-live">Connecting</p><h1 class="display" id="o-title">Owner</h1></div>
-      <div class="row-btns"><button class="chip" id="o-copy" type="button"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg><span>Copy emails</span></button><button class="chip" id="o-csv" type="button"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span>Export CSV</span></button></div>
-    </div>
-    <div class="stats" id="o-stats"></div>
-    <div class="dash-grid">
-      <div class="card">
-        <h2 class="title">Sign-ups</h2>
-        <div class="bars" id="o-bars" role="img" aria-label="Sign-ups per day, last 14 days"></div>
-        <p class="caption">Last 14 days</p>
-        <div class="field" style="margin:var(--sp-5) 0 var(--sp-2)"><label class="sr" for="o-q">Search emails</label><input class="input" id="o-q" type="search" placeholder="Search emails" autocomplete="off"></div>
-        <div id="o-list"></div>
-      </div>
-      <div class="card card--dark stack" id="o-key"></div>
-    </div>
-    <input class="sr" id="o-restore" type="file" accept="application/json" tabindex="-1">
-  </div>
-</section>
-
-<!-- ============ 6. PUBLIC STAMP ============ -->
-<section class="view" id="v-public" aria-label="Shared stamp">
-  <div class="public">
-    <svg class="logo logo--lg" role="img" aria-label="Postpatch"><use href="#i-logo"/></svg>
-    <div id="public-body" class="rise"></div>
-    <a href="#/">Make your own on Postpatch</a>
-  </div>
-</section>
-
-<!-- ============ DIALOGS ============ -->
-<dialog id="viewer" aria-label="Stamp viewer">
-  <div class="viewer">
-    <div class="viewer__top"><button class="round-btn" id="viewer-close" type="button" aria-label="Close"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
-    <div class="stamp-stage" style="padding:0"><img class="stamp-img" id="viewer-img" alt=""></div>
-    <p class="postmark" id="viewer-postmark" style="margin-top:0"></p>
-    <p class="note-line" id="viewer-note"></p>
-    <button class="btn btn--primary" id="viewer-download" type="button"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download PNG</button>
-    <div class="toggle-row">
-      <div><strong style="font-weight:600">Public link</strong><p class="caption" id="share-state">Only you can see this stamp.</p></div>
-      <button class="switch" id="share-toggle" type="button" role="switch" aria-checked="false" aria-label="Public link"></button>
-    </div>
-    <div class="share-link" id="share-row" hidden>
-      <input class="input" id="share-url" readonly aria-label="Public link">
-      <button class="chip" id="share-copy" type="button"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg>Copy</button>
-    </div>
-    <button class="btn btn--danger" id="viewer-delete" type="button"><svg class="icon" aria-hidden="true"><use href="#i-trash"/></svg>Delete stamp</button>
-  </div>
-</dialog>
-<dialog id="confirm" aria-label="Confirm delete">
-  <div class="confirm">
-    <h2 class="title">Delete this stamp?</h2>
-    <p class="body-quiet">It'll be gone for good, along with its public link.</p>
-    <button class="btn btn--primary" id="confirm-yes" type="button">Delete</button>
-    <button class="btn btn--secondary" id="confirm-no" type="button">Keep it</button>
-  </div>
-</dialog>
-<dialog id="ask" aria-label="Question"><div class="confirm"><h2 class="title" id="ask-t"></h2><p class="body-quiet" id="ask-p"></p><div class="stack" id="ask-b"></div></div></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 (() => {
@@ -485,24 +331,17 @@ function enter(el) {
   el.animate([{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'none' }], { duration: 300, easing: EASE });
 }
 
-/* ===================== STORAGE (IndexedDB for stamps) ===================== */
+/* ===================== STORAGE (IndexedDB for messages) ===================== */
 let dbp;
 const openDB = () => dbp ||= new Promise((res, rej) => {
-  const r = indexedDB.open('postpatch', 1);
-  r.onupgradeneeded = () => {
-    const s = r.result.createObjectStore('stamps', { keyPath: 'id', autoIncrement: true });
-    s.createIndex('owner', 'owner'); s.createIndex('token', 'token', { unique: true });
-  };
+  const r = indexedDB.open('skye', 1);
+  r.onupgradeneeded = () => r.result.createObjectStore('m', { keyPath: 'id', autoIncrement: true }).createIndex('k', 'k');
   r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error);
 });
 const reqP = r => new Promise((res, rej) => { r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
-const store = async mode => (await openDB()).transaction('stamps', mode).objectStore('stamps');
-const dbAll = async owner => reqP((await store('readonly')).index('owner').getAll(owner));
-const dbAdd = async rec => reqP((await store('readwrite')).add(rec));
-const dbPut = async rec => reqP((await store('readwrite')).put(rec));
-const dbDel = async id => reqP((await store('readwrite')).delete(id));
-const dbGet = async id => reqP((await store('readonly')).get(id));
-const dbByToken = async t => reqP((await store('readonly')).index('token').get(t));
+const mStore = async m => (await openDB()).transaction('m', m).objectStore('m');
+const mAdd = async rec => { try { rec.id = await reqP((await mStore('readwrite')).add(rec)); } catch { /* too big to keep: still shown this session */ } return rec; };
+const mList = async k => { try { return await reqP((await mStore('readonly')).index('k').getAll(k)); } catch { return []; } };
 
 /* ===================== ACCOUNTS: public ID + password =====================
    Same mechanism as the chat app:
@@ -513,7 +352,7 @@ const dbByToken = async t => reqP((await store('readonly')).index('token').get(t
    - this device keeps a vault (keyring) of every ID it created or signed into,
      so signing in again works instantly and offline
    - signing in on a new device chases the ID across two brokers + a live handshake */
-const ROOT = 'postpatch/v1/';
+const ROOT = 'skye/v1/';
 const topic = (...p) => ROOT + p.join('/');
 const MQTT_URL = 'wss://broker.hivemq.com:8884/mqtt';
 const BROKERS = [MQTT_URL, 'wss://broker.emqx.io:8084/mqtt'];
@@ -528,12 +367,12 @@ const idFromName = nm => { // "Meera" -> MEE482, ITSME7739, MECHAT42 ...
   const r = n => Math.floor(Math.random() * n);
   return [() => base.slice(0, 3 + r(3)) + digs(2 + r(3)), () => 'ITS' + base.slice(0, 2 + r(2)) + digs(2 + r(3)), () => base.slice(0, 2) + 'CHAT' + digs(1 + r(3))][r(3)]();
 };
-const session = () => LS.get('pp_session');
+const session = () => LS.get('sk_session');
 
 /* device vault */
-const vaultAll = () => { const v = LS.get('pp_vault', {}); return v && typeof v === 'object' && !Array.isArray(v) ? v : {}; };
+const vaultAll = () => { const v = LS.get('sk_vault', {}); return v && typeof v === 'object' && !Array.isArray(v) ? v : {}; };
 const vaultGet = id => vaultAll()[normId(id)] || null;
-const vaultPut = entry => { const all = vaultAll(); all[entry.id] = { ...(all[entry.id] || {}), ...entry, savedAt: Date.now() }; LS.set('pp_vault', all); };
+const vaultPut = entry => { const all = vaultAll(); all[entry.id] = { ...(all[entry.id] || {}), ...entry, savedAt: Date.now() }; LS.set('sk_vault', all); };
 
 /* SHA-256 hex: WebCrypto when available, pure-JS fallback otherwise (identical output either way) */
 function sha256Hex(str) {
@@ -590,7 +429,7 @@ function pullRetained(t, match, opts = {}) {
     c.on('close', () => { if (!done && sawConn) finish({ data: null, connected: true }); });
   });
 }
-const profileMatch = id => d => d && d.app === 'postpatch' && d.profile && d.profile.id === id;
+const profileMatch = id => d => d && d.app === 'skye' && d.profile && d.profile.id === id;
 const fetchProfile = (id, timeout) => pullRetained(topic('profile', id), profileMatch(id), { timeout: timeout || 4500, fastMs: 2400 });
 
 /* live handshake: any ONLINE device that owns the ID answers a ping on need/<ID> with its profile */
@@ -603,7 +442,7 @@ function lookupLive(id, timeout) {
     to = setTimeout(() => finish({ data: null, connected: sawConn }), timeout || 4200);
     c.on('connect', () => {
       sawConn = true; try { c.subscribe(topic('profile', id), { qos: 0 }); } catch { /* ignore */ }
-      const ping = () => { try { c.publish(topic('need', id), JSON.stringify({ app: 'postpatch', type: 'need', id, t: Date.now() }), { qos: 0 }); } catch { /* ignore */ } };
+      const ping = () => { try { c.publish(topic('need', id), JSON.stringify({ app: 'skye', type: 'need', id, t: Date.now() }), { qos: 0 }); } catch { /* ignore */ } };
       ping(); r1 = setTimeout(ping, 900); r2 = setTimeout(ping, 2000);
     });
     c.on('message', (_t, payload) => { const s = payload.toString(); if (!s) return; try { const d = JSON.parse(s); if (profileMatch(id)(d)) finish({ data: d, connected: true }); } catch { /* ignore */ } });
@@ -629,7 +468,7 @@ function publishProfile(p, url) {
     let c; try { c = mqtt.connect(url || MQTT_URL, { clientId: 'ppw-' + uid(), reconnectPeriod: 0, connectTimeout: 6000 }); } catch { return resolve(false); }
     let done = false; const fin = v => { if (done) return; done = true; try { c.end(true); } catch { /* ignore */ } resolve(v); };
     setTimeout(() => fin(false), 7000);
-    c.on('connect', () => c.publish(topic('profile', p.id), JSON.stringify({ app: 'postpatch', type: 'profile', profile: { id: p.id, name: p.name, salt: p.salt, hash: p.hash }, updatedAt: Date.now() }), { qos: 1, retain: true }, err => fin(!err)));
+    c.on('connect', () => c.publish(topic('profile', p.id), JSON.stringify({ app: 'skye', type: 'profile', profile: { id: p.id, name: p.name, salt: p.salt, hash: p.hash }, updatedAt: Date.now() }), { qos: 1, retain: true }, err => fin(!err)));
     c.on('error', () => fin(false));
   });
 }
@@ -641,227 +480,24 @@ function startPresence() {
   const id = session(), v = id && vaultGet(id); if (!v || typeof mqtt === 'undefined') return;
   try {
     const c = mqtt.connect(MQTT_URL, { clientId: 'ppo-' + uid(), keepalive: 30, reconnectPeriod: 5000, connectTimeout: 6000 });
-    const body = () => JSON.stringify({ app: 'postpatch', type: 'profile', profile: { id: v.id, name: v.name, salt: v.salt, hash: v.hash }, updatedAt: Date.now() });
-    c.on('connect', () => { c.subscribe(topic('need', id)); c.publish(topic('profile', id), body(), { qos: 1, retain: true }); });
-    c.on('message', t => { if (t === topic('need', id)) c.publish(topic('profile', id), body(), { qos: 0 }); });
+    const body = () => JSON.stringify({ app: 'skye', type: 'profile', profile: { id: v.id, name: v.name, salt: v.salt, hash: v.hash }, updatedAt: Date.now() });
+    c.on('connect', () => { c.subscribe([topic('need', id), topic('in', id), topic('fr', id, '+'), topic('fa', id, '+')]); c.publish(topic('profile', id), body(), { qos: 1, retain: true }); });
+    c.on('message', (t, p) => { if (t === topic('need', id)) c.publish(topic('profile', id), body(), { qos: 0 }); else onNet(t, p); });
     c.on('error', () => { /* retries on its own */ });
     presence = c;
   } catch { /* offline: the vault still signs us in */ }
 }
 
-/* ===================== PRIVACY: metadata scan, seal, verify ===================== */
-const OWNER_ID = 'DEVANSHU';
-/* Pin your inbox public key here (paste the JSON from the owner dashboard) so nobody can swap it on the public broker. */
-const OWNER_PUB = null;
-const emailOk = e => /^[^\s@]{1,64}@[^\s@]+\.[^\s@]{2,}$/.test(e) && e.length <= 120;
-function ask(t, p, labels) {
-  return new Promise(res => {
-    const d = $('#ask'); $('#ask-t').textContent = t; $('#ask-p').textContent = p;
-    $('#ask-b').replaceChildren(...labels.map((l, i) => { const b = document.createElement('button'); b.type = 'button'; b.className = 'btn ' + (i ? 'btn--secondary' : 'btn--primary'); b.textContent = l; b.onclick = () => { d.close(); res(i); }; return b; }));
-    d.addEventListener('close', () => res(-1), { once: true }); d.showModal();
-  });
-}
-/* reads what the ORIGINAL photo file carried (the stamp itself is always re-drawn from pixels) */
-async function scanMeta(file) {
-  const out = { gps: false, device: '', time: false, other: false };
-  try {
-    const buf = await file.slice(0, 262144).arrayBuffer(), b = new DataView(buf);
-    if (file.type === 'image/jpeg') {
-      let o = 2;
-      while (o < b.byteLength - 4 && b.getUint8(o) === 255) {
-        const m = b.getUint8(o + 1), len = b.getUint16(o + 2);
-        if (m === 0xE1) {
-          if (String.fromCharCode(...new Uint8Array(buf, o + 4, 4)) === 'Exif') {
-            const t = o + 10, L = b.getUint16(t) === 0x4949, u16 = p => b.getUint16(p, L), u32 = p => b.getUint32(p, L), ifd = t + u32(t + 4), n = u16(ifd);
-            for (let i = 0; i < n; i++) {
-              const e = ifd + 2 + i * 12, tag = u16(e);
-              if (tag === 0x8825) out.gps = true; if (tag === 0x0132) out.time = true;
-              if (tag === 0x0110) { const c = u32(e + 4), q = c > 4 ? t + u32(e + 8) : e + 8; out.device = String.fromCharCode(...new Uint8Array(buf, q, Math.min(c, 40))).replace(/\0.*/, ''); }
-            }
-          } else out.other = true;
-        }
-        if (m === 0xDA) break; o += 2 + len;
-      }
-    } else out.other = /Exif|eXIf|XML:com\.adobe/.test(new TextDecoder('latin1').decode(buf.slice(0, 65536)));
-  } catch { /* unreadable: treat as unknown */ }
-  return out;
-}
-const crcT = (() => { const t = []; for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
-const crc32 = u => { let c = -1; for (const b of u) c = crcT[(c ^ b) & 255] ^ (c >>> 8); return (c ^ -1) >>> 0; };
-async function addText(blob, kv) { // optional tEXt chunks, inserted right after IHDR
-  const u = new Uint8Array(await blob.arrayBuffer()), enc = new TextEncoder(), parts = [];
-  for (const [k, v] of kv) {
-    const d = enc.encode(k + '\0' + String(v).replace(/[^\x20-\x7e]/g, '?')), c = new Uint8Array(12 + d.length), dv = new DataView(c.buffer);
-    dv.setUint32(0, d.length); c.set(enc.encode('tEXt'), 4); c.set(d, 8); dv.setUint32(8 + d.length, crc32(c.subarray(4, 8 + d.length))); parts.push(c);
-  }
-  return new Blob([u.subarray(0, 33), ...parts, u.subarray(33)], { type: 'image/png' });
-}
-/* invisible seal: 32-bit ID spread over every pixel as +-4 noise; found again by correlation, survives lossless copies and mild compression */
-const AMP = 4;
-function rng(s) { return () => { s = (s + 0x6D2B79F5) | 0; let t = Math.imul(s ^ (s >>> 15), 1 | s); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return (t ^ (t >>> 14)) >>> 0; }; }
-function applySeal(cv, hex) {
-  const g = cv.getContext('2d'), im = g.getImageData(0, 0, cv.width, cv.height), d = im.data, r = rng(0x5EA1), n = parseInt(hex, 16);
-  const bits = Array.from({ length: 32 }, (_, i) => (n >>> (31 - i)) & 1);
-  for (let p = 0; p < d.length; p += 4) { const v = r(), dl = ((v >>> 5) & 1 ? 1 : -1) * (bits[v & 31] ? AMP : -AMP); if (d[p + 3] === 255) { d[p] += dl; d[p + 1] += dl; d[p + 2] += dl; } }
-  g.putImageData(im, 0, 0);
-}
-function readSeal(cv) {
-  const W = cv.width, H = cv.height, d = cv.getContext('2d').getImageData(0, 0, W, H).data, r = rng(0x5EA1), cor = new Float64Array(32), cnt = new Float64Array(32);
-  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
-    const p = (y * W + x) * 4, v = r(); if (x < 1 || y < 1 || x > W - 2 || y > H - 2 || d[p + 3] < 255) continue;
-    const hp = d[p + 1] - (d[p - 3] + d[p + 5] + d[p - W * 4 + 1] + d[p + W * 4 + 1]) / 4, b = v & 31; cor[b] += hp * ((v >>> 5) & 1 ? 1 : -1); cnt[b]++;
-  }
-  let id = 0, str = 0;
-  for (let i = 0; i < 32; i++) { const m = cor[i] / ((cnt[i] * AMP) || 1); str += Math.abs(m); if (m > 0) id |= 1 << (31 - i); }
-  return { found: str / 32 > 0.1, id: (id >>> 0).toString(16).padStart(8, '0') };
-}
-async function pixHash(cv) { // fingerprint of opaque pixels only, so PNG decode rounding at perforation edges can't matter
-  const d = new Uint8Array(cv.getContext('2d').getImageData(0, 0, cv.width, cv.height).data);
-  for (let i = 0; i < d.length; i += 4) if (d[i + 3] !== 255) d[i] = d[i + 1] = d[i + 2] = d[i + 3] = 0;
-  try { return [...new Uint8Array(await crypto.subtle.digest('SHA-256', d))].map(b => b.toString(16).padStart(2, '0')).join(''); }
-  catch { let h = 2166136261; for (let i = 0; i < d.length; i += 7) h = Math.imul(h ^ d[i], 16777619); return 'f' + (h >>> 0).toString(16); }
-}
-$('#seal-toggle').addEventListener('click', e => { const b = e.currentTarget; b.setAttribute('aria-checked', b.getAttribute('aria-checked') !== 'true'); });
-$('#verify-btn').addEventListener('click', () => $('#vfile').click());
-$('#vfile').addEventListener('change', async e => {
-  const f = e.target.files[0]; e.target.value = ''; if (!f) return;
-  try {
-    const bmp = await createImageBitmap(f).catch(() => loadImg(f)), cv = document.createElement('canvas'); cv.width = 989; cv.height = 1200;
-    cv.getContext('2d').drawImage(bmp, 0, 0, 989, 1200);
-    const exact = bmp.width === 989 && bmp.height === 1200, s = readSeal(cv); let msg;
-    if (!s.found) msg = 'No Postpatch seal found. This is not a sealed Postpatch stamp, or editing wiped the seal.';
-    else {
-      const mine = (await dbAll(session())).find(r => r.seal === s.id);
-      if (!mine) msg = `A Postpatch seal (${s.id}) is present, but it is not from this album.`;
-      else msg = `Seal matches your stamp from ${postmarkOf(mine.takenAt)}. ` + (exact && await pixHash(cv) === mine.px ? 'Pixels are identical: this is the untouched original.' : 'The pixels differ, so it was resized, compressed or edited.');
-    }
-    await ask('Verification', msg, ['Done']);
-  } catch { toast('We couldn\'t read that image.'); }
-});
-
-/* ===================== OWNER INBOX: emails are encrypted in the visitor's browser (RSA-OAEP + AES-GCM) ===================== */
-const LK = 'pp_leads', KK = 'pp_owner_key', RSA = { name: 'RSA-OAEP', hash: 'SHA-256' };
-const leads = () => LS.get(LK, {});
-const pub1 = (t, obj) => new Promise(res => {
-  if (typeof mqtt === 'undefined') return res(false);
-  let c; try { c = mqtt.connect(MQTT_URL, { clientId: 'ppl-' + uid(), reconnectPeriod: 0, connectTimeout: 6000 }); } catch { return res(false); }
-  const fin = v => { try { c.end(true); } catch { /* ignore */ } res(v); }; setTimeout(() => fin(false), 7000);
-  c.on('connect', () => c.publish(t, JSON.stringify(obj), { qos: 1, retain: true }, err => fin(!err))); c.on('error', () => fin(false));
-});
-async function sendLead(email) {
-  try {
-    const r = OWNER_PUB ? { data: { jwk: OWNER_PUB } } : await pullRetained(topic('owner', OWNER_ID, 'pub'), d => d && d.jwk, { timeout: 5000, fastMs: 2800 });
-    if (!r.data) throw 0;
-    const pk = await crypto.subtle.importKey('jwk', r.data.jwk, RSA, false, ['encrypt']);
-    const k = await crypto.subtle.generateKey({ name: 'AES-GCM', length: 256 }, true, ['encrypt']), iv = crypto.getRandomValues(new Uint8Array(12));
-    const ct = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, k, new TextEncoder().encode(JSON.stringify({ email, t: Date.now() })));
-    const wk = await crypto.subtle.encrypt({ name: 'RSA-OAEP' }, pk, await crypto.subtle.exportKey('raw', k));
-    if (!await pub1(topic('owner', OWNER_ID, 'lead', randomToken()), { app: 'postpatch', type: 'lead', wk: b64e(new Uint8Array(wk)), iv: b64e(iv), ct: b64e(new Uint8Array(ct)) })) throw 0;
-    LS.del('pp_lead_pending');
-  } catch { LS.set('pp_lead_pending', email); } // retried on the next visit
-}
-async function openLead(d, jwk) {
-  const pk = await crypto.subtle.importKey('jwk', jwk, RSA, false, ['decrypt']);
-  const k = await crypto.subtle.importKey('raw', await crypto.subtle.decrypt({ name: 'RSA-OAEP' }, pk, b64d(d.wk)), 'AES-GCM', false, ['decrypt']);
-  return JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64d(d.iv) }, k, b64d(d.ct))));
-}
-let ownerConn = null;
-const setLive = on => { const el = $('#o-live'); el.classList.toggle('on', on); el.textContent = on ? 'Inbox live' : 'Reconnecting'; };
-function stopOwner() { try { ownerConn?.end(true); } catch { /* ignore */ } ownerConn = null; }
-function startOwner() {
-  stopOwner(); if (typeof mqtt === 'undefined') return;
-  const c = mqtt.connect(BROKERS[0], { clientId: 'ppd-' + uid(), keepalive: 30, reconnectPeriod: 5000, connectTimeout: 6000 });
-  c.on('connect', () => { c.subscribe(topic('owner', OWNER_ID, 'lead', '+'), { qos: 1 }); setLive(true); });
-  c.on('close', () => setLive(false)); c.on('error', () => { /* retries */ });
-  c.on('message', async (t, p) => {
-    const id = t.split('/').pop(), k = LS.get(KK); if (!k || !p.length || leads()[id]) return;
-    try { const d = JSON.parse(p.toString()), v = await openLead(d, k.priv); if (d.type === 'lead' && typeof v.email === 'string' && emailOk(v.email)) { const all = leads(); all[id] = { email: v.email, t: +v.t || Date.now() }; LS.set(LK, all); ownerRender(); } } catch { /* not for this key */ }
-  });
-  ownerConn = c;
-}
-const dayKey = t => new Date(t).toDateString();
-function ownerRender() {
-  const all = Object.values(leads()).sort((a, b) => b.t - a.t), now = Date.now(), D = 864e5, q = $('#o-q').value.trim().toLowerCase();
-  $('#o-stats').innerHTML = [['Emails collected', all.length, 1], ['Today', all.filter(l => dayKey(l.t) === dayKey(now)).length], ['Last 7 days', all.filter(l => now - l.t < 7 * D).length], ['Email domains', new Set(all.map(l => l.email.split('@')[1])).size]]
-    .map(([k, v, dark]) => `<div class="stat card ${dark ? 'card--dark' : ''}"><span class="caption">${k}</span><b>${v}</b></div>`).join('');
-  const days = Array.from({ length: 14 }, (_, i) => { const d = new Date(now - (13 - i) * D); return { k: dayKey(d), n: 0, l: d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) }; });
-  all.forEach(l => { const x = days.find(d => d.k === dayKey(l.t)); if (x) x.n++; });
-  const mx = Math.max(1, ...days.map(d => d.n));
-  $('#o-bars').replaceChildren(...days.map(d => { const i = document.createElement('i'); i.style.height = Math.max(4, d.n / mx * 100) + '%'; i.title = `${d.l}: ${d.n}`; return i; }));
-  const rows = all.filter(l => l.email.toLowerCase().includes(q)).map(l => {
-    const r = document.createElement('div'), a = document.createElement('div'), s = document.createElement('span'), c = document.createElement('small');
-    r.className = 'lead'; a.className = 'avatar'; c.className = 'caption'; a.textContent = l.email[0].toUpperCase(); s.textContent = l.email; // textContent: decrypted data is never trusted as HTML
-    c.textContent = new Date(l.t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }); r.append(a, s, c); return r;
-  });
-  const empty = document.createElement('p'); empty.className = 'body-quiet'; empty.textContent = all.length ? 'No matches.' : 'No sign-ups yet. They land here when someone adds an email on the welcome cards.';
-  $('#o-list').replaceChildren(...(rows.length ? rows : [empty]));
-  $('#o-key').innerHTML = LS.get(KK)
-    ? '<h2 class="title">Inbox key active</h2><p class="body-quiet">Pin it: copy the public key into OWNER_PUB in the code, so nobody can swap it on the public broker. Keep a backup, because emails can only be opened with this key.</p><button class="btn btn--secondary" data-act="pub" type="button">Copy public key</button><button class="btn btn--secondary" data-act="bak" type="button">Download key backup</button><button class="btn-text" data-act="res" type="button" style="color:var(--cream-text)">Restore from backup</button>'
-    : '<h2 class="title">Create your inbox key</h2><p class="body-quiet">Emails are encrypted on the visitor\'s device, so only a key kept in this browser can open them. Create it to start receiving.</p><button class="btn btn--primary" data-act="gen" type="button">Create key</button><button class="btn-text" data-act="res" type="button" style="color:var(--cream-text)">Restore from backup</button>';
-}
-function showOwner() { show('v-owner'); $('#o-title').textContent = `Hello, ${(vaultGet(session()) || {}).name || 'owner'}.`; ownerRender(); startOwner(); }
-$('#o-q').addEventListener('input', ownerRender);
-$('#o-copy').addEventListener('click', async () => { try { await navigator.clipboard.writeText(Object.values(leads()).map(l => l.email).join('\n')); toast('Emails copied.'); } catch { toast('Copy was blocked by the browser.'); } });
-$('#o-csv').addEventListener('click', () => {
-  const q = x => '"' + String(x).replace(/^[=+\-@]/, "'$&").replace(/"/g, '""') + '"';
-  const csv = [['email', 'received'], ...Object.values(leads()).sort((a, b) => b.t - a.t).map(l => [l.email, new Date(l.t).toISOString()])].map(r => r.map(q).join(',')).join('\n');
-  const u = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })), a = document.createElement('a'); a.href = u; a.download = 'postpatch-signups.csv'; a.click(); setTimeout(() => URL.revokeObjectURL(u), 1000);
-});
-$('#o-key').addEventListener('click', async e => {
-  const act = e.target.closest('[data-act]')?.dataset.act; if (!act) return;
-  if (act === 'gen') {
-    const kp = await crypto.subtle.generateKey({ name: 'RSA-OAEP', modulusLength: 2048, publicExponent: new Uint8Array([1, 0, 1]), hash: 'SHA-256' }, true, ['encrypt', 'decrypt']);
-    const k = { pub: await crypto.subtle.exportKey('jwk', kp.publicKey), priv: await crypto.subtle.exportKey('jwk', kp.privateKey) };
-    LS.set(KK, k); pub1(topic('owner', OWNER_ID, 'pub'), { jwk: k.pub }); startOwner(); ownerRender(); toast('Inbox key created.');
-  }
-  if (act === 'pub') { try { await navigator.clipboard.writeText(JSON.stringify(LS.get(KK).pub)); toast('Public key copied.'); } catch { toast('Copy was blocked by the browser.'); } }
-  if (act === 'bak') { const u = URL.createObjectURL(new Blob([JSON.stringify(LS.get(KK))], { type: 'application/json' })), a = document.createElement('a'); a.href = u; a.download = 'postpatch-owner-key.json'; a.click(); setTimeout(() => URL.revokeObjectURL(u), 1000); }
-  if (act === 'res') $('#o-restore').click();
-});
-$('#o-restore').addEventListener('change', async e => {
-  const f = e.target.files[0]; e.target.value = ''; if (!f) return;
-  try { const k = JSON.parse(await f.text()); if (!k.pub || !k.priv) throw 0; LS.set(KK, k); startOwner(); ownerRender(); toast('Key restored.'); } catch { toast('That isn\'t a valid key file.'); }
-});
-
-/* ===================== STAMP RENDERING ===================== */
-const PAPER = '#FDFDEA';
-function geometry(L) {
-  const border = Math.round(L * 0.06), ph = L - 2 * border, pw = Math.round(ph * 0.8);
-  return { W: pw + 2 * border, H: L, border, pw, ph };
-}
-/* Raw photo, center-cropped to 4:5. Flat paper border. Transparent semicircle perforations. No filters. */
-function renderStamp(src, L, holeScale = 1) {
-  const { W, H, border, pw, ph } = geometry(L);
-  const c = document.createElement('canvas'); c.width = W; c.height = H;
-  const g = c.getContext('2d');
-  g.fillStyle = PAPER; g.fillRect(0, 0, W, H);
-  const sw = src.width || src.videoWidth, sh = src.height || src.videoHeight;
-  let cw = sw, ch = sh;
-  if (sw / sh > 0.8) cw = Math.round(sh * 0.8); else ch = Math.round(sw / 0.8);
-  g.imageSmoothingEnabled = true; g.imageSmoothingQuality = 'high';
-  g.drawImage(src, (sw - cw) / 2, (sh - ch) / 2, cw, ch, border, border, pw, ph);
-  const r = L * 14 / 1200 * holeScale, pitch = L * 42 / 1200;
-  const nx = Math.max(2, Math.round(W / pitch)), ny = Math.max(2, Math.round(H / pitch));
-  g.globalCompositeOperation = 'destination-out'; g.fillStyle = '#000'; g.beginPath();
-  for (let i = 0; i <= nx; i++) { const x = i * W / nx; g.moveTo(x + r, 0); g.arc(x, 0, r, 0, 7); g.moveTo(x + r, H); g.arc(x, H, r, 0, 7); }
-  for (let j = 0; j <= ny; j++) { const y = j * H / ny; g.moveTo(r, y); g.arc(0, y, r, 0, 7); g.moveTo(W + r, y); g.arc(W, y, r, 0, 7); }
-  g.fill();
-  return c;
-}
 
 /* ===================== ROUTER ===================== */
-const state = { photo: null, camStream: null, facing: 'environment', newId: null, openId: null };
+const state = {};
 const views = $$('.view');
 function show(id) {
   views.forEach(v => v.classList.toggle('active', v.id === id));
-  const app = ['v-camera', 'v-preview', 'v-album', 'v-owner'].includes(id);
+  const app = id === 'v-chat';
   $('#topbar').hidden = !app;
   if (app) { const u = vaultGet(session()); $('#who').textContent = u ? `${u.name} · ${chunkId(u.id)}` : ''; }
-  $('#nav-camera').toggleAttribute('aria-current', id === 'v-camera' || id === 'v-preview');
-  $('#nav-album').toggleAttribute('aria-current', id === 'v-album');
-  $('#nav-owner').hidden = session() !== OWNER_ID; $('#nav-owner').toggleAttribute('aria-current', id === 'v-owner');
-  $$('.chip[aria-current]').forEach(c => c.setAttribute('aria-current', 'page'));
-  const v = $('#' + id); enter($('.page, .onb, .public', v) || v);
+  const v = $('#' + id); enter($('.page, .onb', v) || v);
   window.scrollTo(0, 0);
 }
 const go = path => { location.hash = path; };
@@ -869,20 +505,14 @@ function route() {
   const h = location.hash.replace(/^#/, '') || '/';
   const user = session();
   if (user && !presence) startPresence(); if (!user) stopPresence();
-  if (h !== '/camera') stopCamera();
-  if (h !== '/owner') stopOwner();
-  if (h.startsWith('/s/')) return publicPage(h.slice(3));
   if (h === '/') {
-    if (user) return go('/camera');
-    if (LS.get('pp_onboarded') && !location.search.includes('tour')) return go('/login');
+    if (user) return go('/chat');
+    if (LS.get('sk_onboarded') && !location.search.includes('tour')) return go('/login');
     setStep(1); return show('v-onboarding');
   }
-  if (h === '/login' || h === '/signup') { if (user) return go('/camera'); return showAuth(h.slice(1)); }
+  if (h === '/login' || h === '/signup') { if (user) return go('/chat'); return showAuth(h.slice(1)); }
   if (!user) return go('/login');
-  if (h === '/camera') return showCamera();
-  if (h === '/preview') { if (!state.photo) return go('/camera'); return showPreview(); }
-  if (h === '/owner') { if (user !== OWNER_ID) return go('/camera'); return showOwner(); }
-  if (h === '/album') return showAlbum();
+  if (h === '/chat') return showChat();
   go('/');
 }
 window.addEventListener('hashchange', route);
@@ -908,15 +538,11 @@ function setStep(n) {
   $('#onb-next').textContent = onbStep === 5 ? 'Create account' : 'Next';
   drawSwirl(slides[onbStep - 1]);
 }
-function finishOnboarding(withMail) {
-  const el = $('#ob-mail'), email = el.value.trim();
-  if (withMail && email) { if (!emailOk(email)) { $('#ob-mail-err').textContent = 'That email doesn\'t look right.'; el.focus(); return; } sendLead(email); }
-  LS.set('pp_onboarded', true); go('/signup');
-}
-$('#onb-next').addEventListener('click', () => onbStep === 5 ? finishOnboarding(true) : setStep(onbStep + 1));
+function finishOnboarding() { LS.set('sk_onboarded', true); go('/signup'); }
+$('#onb-next').addEventListener('click', () => onbStep === 5 ? finishOnboarding() : setStep(onbStep + 1));
 $('#onb-back').addEventListener('click', () => setStep(onbStep - 1));
-$('#onb-skip').addEventListener('click', () => finishOnboarding(false));
-$('#onb-login').addEventListener('click', () => LS.set('pp_onboarded', true));
+$('#onb-skip').addEventListener('click', finishOnboarding);
+$('#onb-login').addEventListener('click', () => LS.set('sk_onboarded', true));
 let sx = 0, sy = 0;
 $('#onb').addEventListener('pointerdown', e => { sx = e.clientX; sy = e.clientY; });
 $('#onb').addEventListener('pointerup', e => {
@@ -964,8 +590,8 @@ function scheduleIdCheck() {
 
 function showAuth(mode) {
   authMode = mode; const signup = mode === 'signup';
-  $('#auth-title').textContent = signup ? 'Start your album.' : 'Welcome back.';
-  $('#auth-sub').textContent = signup ? 'Pick an ID and a password. Your stamps follow your ID.' : 'Use your ID and password to pick up where you left off.';
+  $('#auth-title').textContent = signup ? 'Join SKYE.' : 'Welcome back.';
+  $('#auth-sub').textContent = signup ? 'Pick an ID and a password. Friends find you by your ID.' : 'Use your ID and password to pick up where you left off.';
   $('#auth-submit').textContent = signup ? 'Create my ID' : 'Log in';
   $('#f-name').hidden = !signup; $('#f-pw2').hidden = !signup; $('#id-dice').hidden = !signup;
   pwEl.autocomplete = signup ? 'new-password' : 'current-password';
@@ -997,18 +623,18 @@ async function createAccount(id, name, pw) {
   const r = await fetchProfile(id); if (r.data) throw { code: 'taken' };
   const salt = uid() + uid(), hash = await pwHash(salt, pw);
   const entry = { id, name, salt, hash, created: Date.now() };
-  vaultPut(entry); LS.set('pp_session', id);
+  vaultPut(entry); LS.set('sk_session', id);
   publishProfile(entry); publishProfile(entry, BROKERS[1]); // best effort; presence re-registers it if we were offline
   return { registered: r.connected, name };
 }
 /* sign in: this device's vault first (instant, offline-proof), then chase the ID across the network */
 async function signIn(id, pw, onStep) {
   const v = vaultGet(id);
-  if (v) { if (await pwHash(v.salt, pw) === v.hash) { LS.set('pp_session', id); return v; } throw { code: 'badpw' }; }
+  if (v) { if (await pwHash(v.salt, pw) === v.hash) { LS.set('sk_session', id); return v; } throw { code: 'badpw' }; }
   const { profile, connected } = await lookupIdentity(id, onStep);
   if (!profile) throw { code: connected ? 'notfound' : 'offline' };
   if (await pwHash(profile.salt, pw) !== profile.hash) throw { code: 'badpw' };
-  vaultPut({ id, name: profile.name, salt: profile.salt, hash: profile.hash }); LS.set('pp_session', id);
+  vaultPut({ id, name: profile.name, salt: profile.salt, hash: profile.hash }); LS.set('sk_session', id);
   return profile;
 }
 $('#auth-form').addEventListener('submit', async e => {
@@ -1022,198 +648,195 @@ $('#auth-form').addEventListener('submit', async e => {
     let res;
     if (signup) res = await createAccount(id, nameEl.value.trim().slice(0, 24), pw);
     else res = await signIn(id, pw, s => { btn.textContent = s === 'live' ? 'Asking your other devices…' : 'Looking up your ID…'; });
-    LS.set('pp_onboarded', true); pwEl.value = ''; pw2El.value = '';
-    startPresence(); go('/camera');
+    LS.set('sk_onboarded', true); pwEl.value = ''; pw2El.value = '';
+    startPresence(); go('/chat');
     if (signup) toast(res.registered ? `Welcome, ${res.name}. Your ID is ${chunkId(id)}.` : 'ID saved on this device. We\'ll register it once you\'re online.');
   } catch (err) {
     const code = err && err.code;
     if (code === 'taken') { fieldErr(idEl, $('#id-err'), 'That ID is already taken. Try another.'); setIdStatus('taken', id); }
     else if (code === 'badpw') $('#form-err').textContent = 'That ID and password don\'t match. Try again?';
-    else if (code === 'notfound') $('#form-err').textContent = 'We can\'t find that ID. Check the spelling, or start an album.';
+    else if (code === 'notfound') $('#form-err').textContent = 'We can\'t find that ID. Check the spelling, or start one.';
     else if (code === 'offline') $('#form-err').textContent = 'We can\'t reach the network to look that ID up. Check your connection and try again.';
     else $('#form-err').textContent = 'Something went sideways. Please try again.';
   } finally { btn.disabled = false; btn.textContent = label; }
 });
-$('#logout').addEventListener('click', () => { stopPresence(); LS.del('pp_session'); state.photo = null; go('/login'); });
+$('#logout').addEventListener('click', () => { stopPresence(); Object.keys(peers).forEach(k => { try { peers[k].pc.close(); } catch {} delete peers[k]; }); cur = null; LS.del('sk_session'); go('/login'); });
 
-/* ===================== CAMERA ===================== */
-function prep(src) { // cap the working copy; never alters pixels beyond downscale
-  const w = src.width || src.videoWidth, h = src.height || src.videoHeight, k = Math.min(1, 2400 / Math.max(w, h));
-  const c = document.createElement('canvas'); c.width = Math.round(w * k); c.height = Math.round(h * k);
-  const g = c.getContext('2d'); g.imageSmoothingQuality = 'high'; g.drawImage(src, 0, 0, c.width, c.height); return c;
+/* ===================== SKYE CHAT =====================
+   Friends: requests travel as retained MQTT messages (work even if the friend is offline).
+   Messages & files: sent device-to-device over WebRTC, so there is no server size cap.
+   - text: any length, streamed in 16,000-letter pieces (limit set to 10 crore letters)
+   - files: images, audio, video, anything, up to 4 GB each, in 64 KB pieces with back-pressure
+   Both friends need SKYE open to exchange messages. */
+const MAX_FILE = 4 * 1024 ** 3, MAX_TEXT = 100000000;
+const ICE = { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }, { urls: 'stun:global.stun.twilio.com:3478' }] };
+const peers = {}, qs = {}; let cur = null;
+const fr = () => LS.get('sk_fr_' + session(), {});
+const setFr = o => LS.set('sk_fr_' + session(), o);
+const friendName = id => fr()[id]?.name || id;
+const fmt = n => n < 1024 ? n + ' B' : n < 1048576 ? (n / 1024).toFixed(1) + ' KB' : n < 1073741824 ? (n / 1048576).toFixed(1) + ' MB' : (n / 1073741824).toFixed(2) + ' GB';
+const prog = t => { const x = $('#xfer'); x.hidden = !t; x.textContent = t || ''; };
+const netPub = (t, o) => { try { presence?.publish(t, JSON.stringify(o), { qos: 1, retain: true }); } catch { /* offline */ } };
+const signal = (to, o) => { try { presence?.publish(topic('in', to), JSON.stringify({ from: session(), ...o }), { qos: 0 }); } catch { /* offline */ } };
+
+function onNet(t, p) {
+  let m; try { m = JSON.parse(p.toString()); } catch { return; }
+  if (!m || !m.from) return;
+  if (t.includes('/in/')) return onSignal(m);
+  const f = fr(), x = f[m.from], me = session(), name = String(m.name || m.from).slice(0, 24);
+  if (t.includes('/fr/')) {
+    if (x && x.s === 'f') return;
+    if (x && x.s === 'o') { f[m.from] = { id: m.from, name, s: 'f' }; netPub(topic('fa', m.from, me), { from: me, name: vaultGet(me).name }); toast(`${name} is now your friend.`); }
+    else { f[m.from] = { id: m.from, name, s: 'i' }; if (!x) toast(`${name} sent you a friend request.`); }
+    setFr(f); renderList();
+  } else if (t.includes('/fa/') && x && x.s !== 'f') { f[m.from] = { id: m.from, name, s: 'f' }; setFr(f); renderList(); toast(`${name} accepted your request.`); }
 }
-function stopCamera() {
-  state.camStream?.getTracks().forEach(t => t.stop()); state.camStream = null;
-  const v = $('#video'); v.srcObject = null; v.hidden = true;
-  $('#cam-pre').hidden = false; $('#cam-bar').hidden = true; $('#cam-hint').hidden = true;
+async function addFriend(raw) {
+  const id = normId(raw), me = session();
+  if (!idOk(id) || id === me) return toast('Enter a friend\'s ID (not your own).');
+  const f = fr(); if (f[id]?.s === 'f') return toast('You\'re already friends.');
+  if (f[id]?.s === 'i') return accept(id);
+  const r = await fetchProfile(id); if (!r.data) return toast(r.connected ? 'No one has that ID yet.' : 'Can\'t reach the network. Try again.');
+  f[id] = { id, name: r.data.profile.name, s: 'o' }; setFr(f);
+  netPub(topic('fr', id, me), { from: me, name: vaultGet(me).name }); renderList(); toast(`Request sent to ${f[id].name}.`);
 }
-async function startCamera() {
-  const err = $('#cam-err'); err.textContent = '';
-  if (!navigator.mediaDevices?.getUserMedia) {
-    err.textContent = 'The camera isn\'t available here. It needs https or localhost. You can choose a photo instead.'; return;
+function accept(id) {
+  const f = fr(), me = session(); if (!f[id]) return; f[id].s = 'f'; setFr(f);
+  netPub(topic('fa', id, me), { from: me, name: vaultGet(me).name }); renderList(); openThread(id);
+}
+
+/* WebRTC */
+function stat() { const t = $('#th-st'); if (t) t.textContent = peers[cur]?.dc?.readyState === 'open' ? 'Connected' : 'Connects when you both have SKYE open'; }
+function mkPeer(id) {
+  const pc = new RTCPeerConnection(ICE), p = peers[id] = { pc, dc: null, cur: null };
+  pc.onconnectionstatechange = () => { if (['failed', 'closed', 'disconnected'].includes(pc.connectionState) && peers[id] === p) { delete peers[id]; stat(); } };
+  pc.ondatachannel = e => setDC(id, e.channel); return p;
+}
+function setDC(id, dc) {
+  const p = peers[id]; p.dc = dc; dc.binaryType = 'arraybuffer'; dc.bufferedAmountLowThreshold = 1 << 20;
+  dc.onmessage = e => onData(id, e.data); dc.onopen = () => { p.open?.(p); stat(); };
+}
+const gathered = pc => new Promise(r => { if (pc.iceGatheringState === 'complete') return r(); pc.onicegatheringstatechange = () => pc.iceGatheringState === 'complete' && r(); setTimeout(r, 3500); });
+function connect(id) {
+  const ex = peers[id]; if (ex?.dc?.readyState === 'open') return Promise.resolve(ex); if (ex?.wait) return ex.wait;
+  const p = mkPeer(id); setDC(id, p.pc.createDataChannel('skye'));
+  p.wait = new Promise((res, rej) => {
+    p.open = res;
+    setTimeout(() => { if (p.dc?.readyState !== 'open') { rej(new Error('offline')); try { p.pc.close(); } catch { /* ignore */ } if (peers[id] === p) delete peers[id]; } }, 15000);
+  });
+  p.wait.catch(() => {});
+  (async () => { await p.pc.setLocalDescription(await p.pc.createOffer()); await gathered(p.pc); signal(id, { t: 'offer', sdp: p.pc.localDescription }); })();
+  return p.wait;
+}
+async function onSignal(m) {
+  if (fr()[m.from]?.s !== 'f') return;
+  try {
+    if (m.t === 'offer') {
+      try { peers[m.from]?.pc.close(); } catch { /* ignore */ }
+      const p = mkPeer(m.from); await p.pc.setRemoteDescription(m.sdp); await p.pc.setLocalDescription(await p.pc.createAnswer()); await gathered(p.pc);
+      signal(m.from, { t: 'answer', sdp: p.pc.localDescription });
+    } else if (m.t === 'answer') await peers[m.from]?.pc.setRemoteDescription(m.sdp);
+  } catch { /* stale signal */ }
+}
+function onData(id, d) {
+  const p = peers[id]; if (!p) return;
+  if (typeof d === 'string') {
+    const m = JSON.parse(d);
+    if (m.k === 'h') p.cur = (m.size > MAX_FILE || m.len > MAX_TEXT) ? null : { ...m, parts: [], txt: '', got: 0 };
+    else if (m.k === 'c' && p.cur) p.cur.txt += m.d;
+    else if (m.k === 'e') finish(id);
+  } else if (p.cur) {
+    p.cur.parts.push(d); p.cur.got += d.byteLength;
+    if (cur === id) prog(`Receiving ${p.cur.name} · ${Math.floor(p.cur.got * 100 / p.cur.size)}%`);
   }
-  try {
-    state.camStream?.getTracks().forEach(t => t.stop());
-    const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: state.facing }, width: { ideal: 2048 }, height: { ideal: 2048 } }, audio: false });
-    state.camStream = stream;
-    const v = $('#video'); v.srcObject = stream; v.hidden = false; await v.play().catch(() => {});
-    $('#cam-pre').hidden = true; $('#cam-bar').hidden = false; $('#cam-hint').hidden = false;
-  } catch (e) {
-    err.textContent = e.name === 'NotAllowedError' ? 'Camera access is blocked. Allow it in your browser settings, or choose a photo instead.'
-      : e.name === 'NotFoundError' ? 'No camera found. You can choose a photo instead.'
-      : 'We couldn\'t start the camera. You can choose a photo instead.';
+}
+async function finish(id) {
+  const c = peers[id]?.cur; if (!c) return; peers[id].cur = null; prog('');
+  const rec = await mAdd({ k: session() + '|' + id, dir: 'in', t: Date.now(), kind: c.kind, ...(c.kind === 'text' ? { text: c.txt } : { name: c.name, size: c.size, mime: c.mime, blob: new Blob(c.parts, { type: c.mime }) }) });
+  if (cur === id) addBubble(rec); else toast(`New message from ${friendName(id)}`);
+}
+async function sendItem(id, it) {
+  const dc = (await connect(id)).dc;
+  const room = async () => { while (dc.bufferedAmount > 4 << 20) await new Promise(r => dc.addEventListener('bufferedamountlow', r, { once: true })); };
+  if (it.kind === 'text') {
+    const s = it.text; dc.send(JSON.stringify({ k: 'h', kind: 'text', len: s.length }));
+    for (let i = 0; i < s.length; i += 16000) { await room(); dc.send(JSON.stringify({ k: 'c', d: s.slice(i, i + 16000) })); if (s.length > 1e6 && i % 1e6 < 16000) prog(`Sending… ${Math.floor(i * 100 / s.length)}%`); }
+  } else {
+    const f = it.file; dc.send(JSON.stringify({ k: 'h', kind: 'file', name: f.name, size: f.size, mime: f.type }));
+    for (let o = 0; o < f.size; o += 1 << 20) {
+      const ab = await f.slice(o, o + (1 << 20)).arrayBuffer();
+      for (let j = 0; j < ab.byteLength; j += 65536) { await room(); dc.send(ab.slice(j, j + 65536)); }
+      prog(`Sending ${f.name} · ${Math.floor(o * 100 / f.size)}%`);
+    }
+  }
+  dc.send(JSON.stringify({ k: 'e' })); prog('');
+}
+async function doSend(items) {
+  const id = cur; if (!id) return;
+  for (const it of items) {
+    try {
+      await (qs[id] = (qs[id] || Promise.resolve()).catch(() => {}).then(() => sendItem(id, it)));
+      const rec = await mAdd({ k: session() + '|' + id, dir: 'out', t: Date.now(), ...(it.kind === 'text' ? { kind: 'text', text: it.text } : { kind: 'file', name: it.file.name, size: it.file.size, mime: it.file.type, blob: it.file }) });
+      if (cur === id) addBubble(rec);
+    } catch { prog(''); toast(`${friendName(id)} isn't online right now. You both need SKYE open.`); break; }
   }
 }
-async function showCamera() {
-  show('v-camera');
-  if (state.camStream) return;
-  try { const p = await navigator.permissions?.query({ name: 'camera' }); if (p?.state === 'granted') startCamera(); } catch { /* not supported */ }
-}
-$('#cam-allow').addEventListener('click', startCamera);
-$('#flip').addEventListener('click', () => { state.facing = state.facing === 'user' ? 'environment' : 'user'; startCamera(); });
-$('#shutter').addEventListener('click', () => {
-  const v = $('#video'); if (!v.videoWidth) return;
-  if (!reduce.matches) $('#ring').animate([{ opacity: .9, transform: 'scale(1)' }, { opacity: 0, transform: 'scale(1.5)' }], { duration: 500, easing: EASE });
-  state.meta = null; state.photo = prep(v);
-  setTimeout(() => go('/preview'), reduce.matches ? 0 : 160);
-});
-const loadImg = file => new Promise((res, rej) => {
-  const url = URL.createObjectURL(file), im = new Image();
-  im.onload = () => { URL.revokeObjectURL(url); res(im); }; im.onerror = () => { URL.revokeObjectURL(url); rej(new Error('decode')); }; im.src = url;
-});
-async function handleFile(file) {
-  if (!file) return;
-  if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type) || file.size > 8 * 1024 * 1024) { toast('Please use a JPEG, PNG or WebP photo under 8 MB.'); return; }
-  try {
-    let bmp; try { bmp = await createImageBitmap(file, { imageOrientation: 'from-image' }); } catch { bmp = await loadImg(file); }
-    if (Math.min(bmp.width, bmp.height) < 200) { toast('That photo is a bit too small. Try a bigger one.'); return; }
-    state.meta = await scanMeta(file); state.photo = prep(bmp); go('/preview');
-  } catch { toast('We couldn\'t read that photo. Try another.'); }
-}
-$('#cam-upload-alt').addEventListener('click', () => $('#file').click());
-$('#cam-pick').addEventListener('click', () => $('#file').click());
-$('#file').addEventListener('change', e => { handleFile(e.target.files[0]); e.target.value = ''; });
 
-/* ===================== PREVIEW ===================== */
-function showPreview() {
-  show('v-preview'); state.takenAt = todayISO();
-  $('#note').value = ''; $('#pv-note').textContent = ''; $('#save-err').textContent = '';
-  $('#pv-postmark').textContent = postmarkOf(state.takenAt);
-  const cv = $('#pv-canvas'), ctx = cv.getContext('2d');
-  const draw = s => { ctx.clearRect(0, 0, cv.width, cv.height); ctx.drawImage(renderStamp(state.photo, 1200, s), 0, 0); };
-  if (reduce.matches) return draw(1);
-  const t0 = performance.now(), D = 800;
-  const tick = now => { const t = Math.min(1, (now - t0) / D); draw(1 - Math.pow(1 - t, 4)); if (t < 1) requestAnimationFrame(tick); };
-  requestAnimationFrame(tick);
-  cv.animate([{ opacity: 0, transform: 'scale(.94) translateY(12px)' }, { opacity: 1, transform: 'none' }], { duration: 800, easing: EASE });
+/* UI */
+function addBubble(m) {
+  const b = document.createElement('div'); b.className = 'b ' + (m.dir === 'out' ? 'me' : 'th');
+  if (m.kind === 'text') {
+    const lim = 3000, s = document.createElement('span'); s.textContent = m.text.length > lim ? m.text.slice(0, lim) + '…' : m.text; b.append(s);
+    if (m.text.length > lim) { const c = document.createElement('button'); c.type = 'button'; c.className = 'chip'; c.textContent = `Show all · ${m.text.length.toLocaleString('en-IN')} letters`; c.onclick = () => { s.textContent = m.text; c.remove(); }; b.append(c); }
+  } else {
+    const u = URL.createObjectURL(m.blob), mt = m.mime || ''; let el;
+    if (mt.startsWith('image/')) { el = new Image(); el.src = u; el.alt = m.name; }
+    else if (mt.startsWith('video/') || mt.startsWith('audio/')) { el = document.createElement(mt.slice(0, 5)); el.src = u; el.controls = true; }
+    if (el) b.append(el);
+    const a = document.createElement('a'); a.className = 'chip'; a.href = u; a.download = m.name; a.textContent = `${m.name} · ${fmt(m.size)}`; b.append(a);
+  }
+  const box = $('#msgs'); box.append(b); box.scrollTop = box.scrollHeight;
 }
-$('#note').addEventListener('input', e => { $('#pv-note').textContent = e.target.value; });
-$('#retake').addEventListener('click', () => { state.photo = null; go('/camera'); });
-$('#save-stamp').addEventListener('click', async e => {
-  const btn = e.currentTarget; btn.disabled = true; btn.textContent = 'Saving…'; $('#save-err').textContent = '';
-  try {
-    const m = state.meta, found = m ? [m.gps && 'location (GPS)', m.device && `camera (${m.device})`, m.time && 'date and time', m.other && 'extra embedded data'].filter(Boolean) : [];
-    const choice = await ask('Remove photo metadata?', found.length ? `Your original photo carried hidden details: ${found.join(', ')}. Removing makes sure none of it travels with the stamp.` : 'Photo files can hide location, camera and time. Removing keeps the stamp file clean.', ['Remove metadata', 'Keep stamp details (date, note)']);
-    if (choice < 0) return;
-    const token = randomToken(), note = $('#note').value.trim().slice(0, 40), big = renderStamp(state.photo, 1200);
-    let seal = ''; if ($('#seal-toggle').getAttribute('aria-checked') === 'true') { seal = (await sha256(session() + ':' + token)).slice(0, 8); applySeal(big, seal); }
-    const px = await pixHash(big); let stamp = await canvasBlob(big);
-    if (choice === 1) stamp = await addText(stamp, [['Software', 'Postpatch'], ['Creation Time', state.takenAt], ['Description', note], ['Copyright', `Postpatch stamp by ${session()}. Not for AI training or synthetic media.`]]);
-    const thumb = await canvasBlob(renderStamp(state.photo, 400));
-    state.newId = await dbAdd({ owner: session(), stamp, thumb, note, takenAt: state.takenAt, isPublic: false, token, seal, px, created: Date.now() });
-    state.photo = null; toast('Saved to your album.'); go('/album');
-  } catch { $('#save-err').textContent = 'We couldn\'t save that stamp. Please try again.'; }
-  finally { btn.disabled = false; btn.textContent = 'Save stamp'; }
+function renderList() {
+  const list = Object.values(fr()).sort((a, b) => (b.s === 'i') - (a.s === 'i') || a.name.localeCompare(b.name));
+  $('#fl').replaceChildren(...list.map(x => {
+    const r = document.createElement('div'); r.className = 'fr' + (x.id === cur ? ' on' : '');
+    const av = document.createElement('span'); av.className = 'av'; av.textContent = (x.name[0] || '?').toUpperCase();
+    const t = document.createElement('div'), n = document.createElement('strong'), c = document.createElement('div'); c.className = 'caption';
+    n.textContent = x.name; c.textContent = chunkId(x.id) + (x.s === 'o' ? ' · request sent' : ''); t.append(n, c); r.append(av, t);
+    if (x.s === 'f') { r.tabIndex = 0; r.setAttribute('role', 'button'); r.onclick = () => openThread(x.id); r.onkeydown = e => e.key === 'Enter' && openThread(x.id); }
+    if (x.s === 'i') { const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.textContent = 'Accept'; b.onclick = () => accept(x.id); r.append(b); }
+    return r;
+  }));
+  $('#fl-empty').hidden = list.length > 0;
+}
+async function openThread(id) {
+  cur = id; $('#chat').classList.add('in-thread'); $('#th-empty').hidden = true; $('#thread').hidden = false;
+  $('#th-name').textContent = friendName(id); $('#msgs').replaceChildren(); prog(''); stat(); renderList();
+  (await mList(session() + '|' + id)).sort((a, b) => a.t - b.t).forEach(m => cur === id && addBubble(m));
+  connect(id).then(stat, stat);
+}
+function showChat() { show('v-chat'); renderList(); }
+$('#add-form').addEventListener('submit', e => { e.preventDefault(); addFriend($('#addid').value); $('#addid').value = ''; });
+$('#addid').addEventListener('input', e => { e.target.value = normId(e.target.value); });
+$('#th-back').addEventListener('click', () => { cur = null; $('#chat').classList.remove('in-thread'); $('#thread').hidden = true; $('#th-empty').hidden = false; renderList(); });
+$('#att-btn').addEventListener('click', () => $('#att').click());
+$('#att').addEventListener('change', e => {
+  const ok = [...e.target.files].filter(f => f.size <= MAX_FILE || (toast(`${f.name} is over 4 GB.`), false)); e.target.value = '';
+  if (ok.length) doSend(ok.map(file => ({ kind: 'file', file })));
 });
+const sendText = () => {
+  const t = $('#tx').value; if (!t.trim()) return;
+  if (t.length > MAX_TEXT) return toast('That message is over 10 crore letters.');
+  $('#tx').value = ''; $('#tx').style.height = ''; doSend([{ kind: 'text', text: t }]);
+};
+$('#compose').addEventListener('submit', e => { e.preventDefault(); sendText(); });
+$('#tx').addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) { e.preventDefault(); sendText(); } });
+$('#tx').addEventListener('input', e => { const t = e.target; t.style.height = 'auto'; t.style.height = Math.min(140, t.scrollHeight) + 'px'; });
 
-/* ===================== ALBUM ===================== */
-const urlCache = new Map();
-function urlsFor(rec) {
-  if (!urlCache.has(rec.id)) urlCache.set(rec.id, { stamp: URL.createObjectURL(rec.stamp), thumb: URL.createObjectURL(rec.thumb) });
-  return urlCache.get(rec.id);
-}
-const altFor = rec => `Stamp postmarked ${postmarkOf(rec.takenAt)}${rec.note ? ': ' + rec.note : ''}`;
-const albumEl = $('#album');
-function setAlbumState(s) {
-  $('#album-loading').hidden = s !== 'loading'; $('#album-empty').hidden = s !== 'empty';
-  $('#album-error').hidden = s !== 'error'; albumEl.hidden = s !== 'list';
-}
-function tile(rec, i) {
-  const b = document.createElement('button'); b.type = 'button';
-  const isNew = rec.id === state.newId;
-  b.className = 'tile ' + (isNew ? 'drop' : 'fade'); b.style.animationDelay = isNew ? '0ms' : `${i * 40}ms`;
-  const img = new Image(); img.width = 330; img.height = 400; img.loading = 'lazy'; img.decoding = 'async'; img.alt = altFor(rec); img.src = urlsFor(rec).thumb;
-  const s = document.createElement('span'); s.textContent = postmarkOf(rec.takenAt);
-  b.append(img, s); b.addEventListener('click', () => openViewer(rec.id)); return b;
-}
-async function showAlbum() {
-  show('v-album'); setAlbumState('loading');
-  try {
-    const list = (await dbAll(session())).sort((a, b) => b.created - a.created);
-    $('#album-count').textContent = list.length ? `${list.length} stamp${list.length === 1 ? '' : 's'}` : '';
-    if (!list.length) return setAlbumState('empty');
-    albumEl.replaceChildren(...list.map(tile)); setAlbumState('list'); state.newId = null;
-  } catch { setAlbumState('error'); }
-}
-$('#album-retry').addEventListener('click', showAlbum);
-
-const viewer = $('#viewer'), confirmDlg = $('#confirm');
-const shareURL = t => location.href.split('#')[0] + '#/s/' + t;
-function syncShare(rec) {
-  $('#share-toggle').setAttribute('aria-checked', rec.isPublic);
-  $('#share-row').hidden = !rec.isPublic;
-  $('#share-state').textContent = rec.isPublic ? 'Anyone with the link can see it.' : 'Only you can see this stamp.';
-  $('#share-url').value = shareURL(rec.token);
-}
-async function openViewer(id) {
-  const rec = await dbGet(id); if (!rec) return; state.openId = id;
-  const img = $('#viewer-img'); img.src = urlsFor(rec).stamp; img.alt = altFor(rec);
-  $('#viewer-postmark').textContent = postmarkOf(rec.takenAt); $('#viewer-note').textContent = rec.note;
-  syncShare(rec); viewer.showModal();
-}
-$('#viewer-close').addEventListener('click', () => viewer.close());
-viewer.addEventListener('click', e => { if (e.target === viewer) viewer.close(); });
-$('#viewer-download').addEventListener('click', async () => {
-  const rec = await dbGet(state.openId); if (!rec) return;
-  const a = document.createElement('a'); a.href = urlsFor(rec).stamp; a.download = `postpatch-${rec.takenAt}.png`; document.body.append(a); a.click(); a.remove();
-});
-$('#share-toggle').addEventListener('click', async () => {
-  const rec = await dbGet(state.openId); if (!rec) return;
-  if (rec.isPublic) rec.token = randomToken(); // revoking rotates the token; the old link dies
-  rec.isPublic = !rec.isPublic; await dbPut(rec); syncShare(rec);
-  toast(rec.isPublic ? 'Public link is on.' : 'Link turned off.');
-});
-$('#share-copy').addEventListener('click', async () => {
-  const input = $('#share-url');
-  try { await navigator.clipboard.writeText(input.value); } catch { input.select(); document.execCommand('copy'); }
-  toast('Link copied.');
-});
-$('#viewer-delete').addEventListener('click', () => confirmDlg.showModal());
-$('#confirm-no').addEventListener('click', () => confirmDlg.close());
-$('#confirm-yes').addEventListener('click', async () => {
-  const id = state.openId; await dbDel(id);
-  const u = urlCache.get(id); if (u) { URL.revokeObjectURL(u.stamp); URL.revokeObjectURL(u.thumb); urlCache.delete(id); }
-  confirmDlg.close(); viewer.close(); toast('Stamp deleted.'); showAlbum();
-});
-
-/* ===================== PUBLIC STAMP ===================== */
-async function publicPage(token) {
-  show('v-public');
-  const body = $('#public-body'); body.replaceChildren();
-  const msg = (h, p) => { const a = document.createElement('h1'); a.className = 'title'; a.textContent = h; const b = document.createElement('p'); b.className = 'body-quiet'; b.textContent = p; body.append(a, b); };
-  try {
-    const rec = await dbByToken(token);
-    if (!rec || !rec.isPublic) return msg('Nothing here.', 'This stamp isn\'t shared, or the link was turned off.');
-    const img = new Image(); img.className = 'stamp-img reveal'; img.width = 989; img.height = 1200; img.alt = altFor(rec); img.src = urlsFor(rec).stamp;
-    const pm = document.createElement('p'); pm.className = 'postmark'; pm.textContent = postmarkOf(rec.takenAt);
-    const n = document.createElement('p'); n.className = 'note-line'; n.textContent = rec.note;
-    body.append(img, pm, n);
-  } catch { msg('Something went sideways.', 'We couldn\'t open that stamp. Try again in a moment.'); }
-}
 
 /* ===================== START ===================== */
 route();
-const pend = LS.get('pp_lead_pending'); if (pend) sendLead(pend);
 
 })();
 </script>
